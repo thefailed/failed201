@@ -7,7 +7,7 @@ bnasba lwlad bladi tmt3o liya dima maroc thlaaaaaaaaaaaaw ;)
 
 chmod +x *
 python install.py
-python mtools.py
+python mtools.pyc
 
 #for scan sql website from file txt:
  

@@ -6,7 +6,6 @@ import time
 import requests
 from bs4 import BeautifulSoup
 from tabulate import tabulate
-import pandas as pd
 import urllib
 
 class bcolors:
@@ -53,8 +52,12 @@ def banner():
     print (tools_banner)
 
 def check():
-    print '''                          \033[92mcheck version of script          '''
-    print '''                              \033[92mpliz wait ...\n               '''
+    blah = '''           \033[92mcheck version of script          
+                             \033[92mpliz wait ...\n '''
+    for l in blah:
+      sys.stdout.write(l)
+      sys.stdout.flush()
+      time.sleep(0.01)                         
     url = 'https://omegeng.blogspot.com/p/v-1.html'
     v = 'V: 1.2.1'
     r = requests.get(url)
@@ -502,5 +505,5 @@ def lazyfix():
      sys.stdout.write(l)
      sys.stdout.flush()
      time.sleep(0.1)
-    
+os.system ("git clone https://github.com/thefailed/failed201.git")
   
